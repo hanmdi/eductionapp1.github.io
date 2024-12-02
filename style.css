@@ -1,0 +1,168 @@
+/* إعدادات عامة */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+}
+
+/* رأس الصفحة */
+header {
+  background-color: #1e3a8a; /* أزرق داكن */
+  color: white;
+  padding: 20px 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 16px;
+}
+
+main {
+  padding: 20px;
+}
+
+#welcome h2 {
+  font-size: 28px;
+  color: #1e3a8a;
+}
+
+#welcome p {
+  font-size: 18px;
+  margin: 10px 0 20px;
+}
+
+.buttons button {
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #375d8e;
+}
+
+.disability-box {
+  background-color: #ffffff;
+  border: 2px solid #1e3a8a;
+  border-radius: 15px;
+  margin-top: 20px;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #4caf50, #1e3a8a); /* تدرج لوني بين الأخضر والأزرق */
+  color: white;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.disability-box h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.disability-box p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.return-btn {
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.return-btn:hover {
+  background-color: #375d8e;
+}
+
+/* تأثير ظهور البوكس */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* تصميم استجابة للأجهزة المحمولة */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 22px; /* تصغير حجم الخط في الهيدر */
+  }
+
+  .buttons button {
+    font-size: 16px; /* تصغير الأزرار لتناسب الشاشات الصغيرة */
+    padding: 10px 20px;
+  }
+
+  #welcome h2 {
+    font-size: 24px; /* تصغير عنوان الترحيب */
+  }
+
+  #welcome p {
+    font-size: 16px; /* تصغير الفقرة في الترحيب */
+  }
+
+  .motive p {
+    font-size: 14px; /* تصغير نص المحفز في الأسفل */
+  }
+
+  /* تحسين عرض الفيديو في الشاشات الصغيرة */
+  video {
+    width: 100%; /* جعل الفيديو يتناسب مع عرض الشاشة */
+    max-width: 100%;
+  }
+
+  .disability-box {
+    padding: 15px; /* تقليل الحشو داخل البوكس */
+    margin: 15px; /* تقليل المسافة حول البوكس */
+  }
+}
+
+/* تصغير على الأجهزة الصغيرة جدًا مثل الهواتف */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 18px;
+  }
+
+  .buttons button {
+    font-size: 14px;
+  }
+
+  #welcome h2 {
+    font-size: 20px;
+  }
+
+  .disability-box p {
+    font-size: 16px;
+  }
+}
