@@ -3,21 +3,22 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #e3f2fd; /* خلفية زرقاء فاتحة */
+  color: #444; /* لون نص داكن قليلاً */
   text-align: center;
 }
 
 /* رأس الصفحة */
 header {
-  background-color: #1e3a8a; /* أزرق داكن */
-  color: white;
+  background-color: #0d47a1; /* أزرق غامق */
+  color: #fff; /* أبيض */
   padding: 20px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل جميل */
 }
 
 header h1 {
   margin: 0;
-  font-size: 26px;
+  font-size: 28px;
 }
 
 header p {
@@ -30,52 +31,48 @@ main {
 }
 
 #welcome h2 {
-  font-size: 28px;
-  color: #1e3a8a;
+  font-size: 30px;
+  color: #1565c0; /* أزرق متوسط */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* تأثير نص */
 }
 
 #welcome p {
-  font-size: 18px;
-  margin: 10px 0 20px;
+  font-size: 20px;
+  margin: 15px 0 25px;
+  color: #555;
 }
 
 .buttons button {
-  background-color: #1e3a8a;
-  color: white;
+  background-color: #42a5f5; /* أزرق فاتح */
+  color: #fff;
   border: none;
-  padding: 12px 24px;
+  padding: 12px 28px;
   margin: 10px;
   font-size: 18px;
-  border-radius: 10px;
+  border-radius: 25px; /* زوايا مستديرة أكثر */
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* ظل للأزرار */
 }
 
 .buttons button:hover {
-  background-color: #375d8e;
+  background-color: #1e88e5; /* أزرق أكثر حدة عند التمرير */
+  transform: scale(1.05); /* تكبير خفيف */
 }
 
 .disability-box {
-  background-color: #ffffff;
-  border: 2px solid #1e3a8a;
-  border-radius: 15px;
-  margin-top: 20px;
+  background: linear-gradient(to right, #81c784, #64b5f6); /* تدرج بين الأخضر والأزرق */
+  color: white;
+  border-radius: 20px;
+  margin-top: 30px;
   padding: 30px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 100%;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(to right, #4caf50, #1e3a8a); /* تدرج لوني بين الأخضر والأزرق */
-  color: white;
-  animation: fadeIn 0.8s ease-out;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* ظل جميل */
+  animation: fadeIn 1s ease-out;
 }
 
 .disability-box h2 {
-  font-size: 24px;
+  font-size: 26px;
   margin-bottom: 20px;
 }
 
@@ -85,20 +82,22 @@ main {
 }
 
 .return-btn {
-  background-color: #1e3a8a;
-  color: white;
+  background-color: #0d47a1;
+  color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 25px;
   font-size: 16px;
-  border-radius: 10px;
+  border-radius: 15px;
   cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
   position: fixed;
   bottom: 20px;
   right: 20px;
 }
 
 .return-btn:hover {
-  background-color: #375d8e;
+  background-color: #1565c0;
+  transform: translateY(-2px); /* تحريك خفيف عند التمرير */
 }
 
 /* تأثير ظهور البوكس */
@@ -113,56 +112,52 @@ main {
   }
 }
 
-/* تصميم استجابة للأجهزة المحمولة */
+/* استجابة للأجهزة المحمولة */
 @media (max-width: 768px) {
-  header h1 {
-    font-size: 22px; /* تصغير حجم الخط في الهيدر */
-  }
-
   .buttons button {
-    font-size: 16px; /* تصغير الأزرار لتناسب الشاشات الصغيرة */
-    padding: 10px 20px;
-  }
-
-  #welcome h2 {
-    font-size: 24px; /* تصغير عنوان الترحيب */
-  }
-
-  #welcome p {
-    font-size: 16px; /* تصغير الفقرة في الترحيب */
-  }
-
-  .motive p {
-    font-size: 14px; /* تصغير نص المحفز في الأسفل */
-  }
-
-  /* تحسين عرض الفيديو في الشاشات الصغيرة */
-  video {
-    width: 100%; /* جعل الفيديو يتناسب مع عرض الشاشة */
-    max-width: 100%;
+    font-size: 16px;
+    padding: 10px 22px;
   }
 
   .disability-box {
-    padding: 15px; /* تقليل الحشو داخل البوكس */
-    margin: 15px; /* تقليل المسافة حول البوكس */
+    padding: 20px;
   }
 }
 
-/* تصغير على الأجهزة الصغيرة جدًا مثل الهواتف */
 @media (max-width: 480px) {
   header h1 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .buttons button {
     font-size: 14px;
   }
 
-  #welcome h2 {
-    font-size: 20px;
-  }
-
   .disability-box p {
     font-size: 16px;
   }
 }
+.video-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.video-box {
+  flex: 1;
+  max-width: 45%;
+  min-width: 300px;
+  text-align: center;
+}
+
+video {
+  width: 100%; /* جعل العرض يتناسب مع الحاوية */
+  max-width: 600px; /* تحديد أقصى عرض */
+  height: 400px; /* تعيين الطول يدويًا ليتطابق */
+  object-fit: cover; /* جعل المحتوى يناسب الإطار */
+  border-radius: 10px; /* زوايا مستديرة */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+

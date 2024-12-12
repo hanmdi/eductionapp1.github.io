@@ -44,12 +44,25 @@ function showDisabilityInfo(disabilityType) {
     const lessonText = `
       <div class="disability-box">
         <h2>درس: حياة التنقل والترحال قبل اكتشاف الزراعة</h2>
-        <video controls autoplay>
-          <source src="deaf.mp4" type="video/mp4">
-          <track src="lesson-captions.srt" kind="subtitles" srclang="ar" label="Arabic">
-          متصفحك لا يدعم الفيديو.
-        </video>
-        <p>هذا الفيديو يقدم شرحًا مترجمًا بلغة الإشارة حول حياة الإنسان قبل اكتشاف الزراعة.</p>
+        <div class="video-container">
+          <!-- الفيديو الأول: الشرح النصي -->
+          <div class="video-box">
+            <video controls autoplay>
+              <source src="deaf.mp4" type="video/mp4">
+              <track src="lesson-captions.srt" kind="subtitles" srclang="ar" label="Arabic">
+              متصفحك لا يدعم الفيديو.
+            </video>
+            <p>هذا الفيديو يقدم شرحًا نصيًا حول حياة الإنسان قبل اكتشاف الزراعة.</p>
+          </div>
+          <!-- الفيديو الثاني: لغة الإشارة -->
+          <div class="video-box">
+            <video controls autoplay>
+              <source src="sign-language-lesson.mp4" type="video/mp4">
+              متصفحك لا يدعم الفيديو.
+            </video>
+            <p>هذا الفيديو يشرح بلغة الإشارة.</p>
+          </div>
+        </div>
       </div>
       <button class="return-btn" onclick="goBack()">العودة إلى الصفحة الرئيسية</button>
     `;
