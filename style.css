@@ -1,5 +1,6 @@
 /* إعدادات عامة */
-body {
+body 
+{
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -9,40 +10,47 @@ body {
 }
 
 /* رأس الصفحة */
-header {
+header 
+{
   background-color: #0d47a1; /* أزرق غامق */
   color: #fff; /* أبيض */
   padding: 20px 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل جميل */
 }
 
-header h1 {
+header h1 
+{
   margin: 0;
   font-size: 28px;
 }
 
-header p {
+header p 
+{
   margin: 5px 0 0;
   font-size: 16px;
 }
 
-main {
+main 
+{
   padding: 20px;
 }
 
-#welcome h2 {
+#welcome h2 
+{
   font-size: 30px;
   color: #1565c0; /* أزرق متوسط */
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* تأثير نص */
 }
 
-#welcome p {
+#welcome p 
+{
   font-size: 20px;
   margin: 15px 0 25px;
   color: #555;
 }
 
-.buttons button {
+.buttons button 
+{
   background-color: #42a5f5; /* أزرق فاتح */
   color: #fff;
   border: none;
@@ -55,12 +63,14 @@ main {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* ظل للأزرار */
 }
 
-.buttons button:hover {
+.buttons button:hover 
+{
   background-color: #1e88e5; /* أزرق أكثر حدة عند التمرير */
   transform: scale(1.05); /* تكبير خفيف */
 }
 
-.disability-box {
+.disability-box 
+{
   background: linear-gradient(to right, #81c784, #64b5f6); /* تدرج بين الأخضر والأزرق */
   color: white;
   border-radius: 20px;
@@ -71,18 +81,21 @@ main {
   animation: fadeIn 1s ease-out;
 }
 
-.disability-box h2 {
+.disability-box h2 
+{
   font-size: 26px;
   margin-bottom: 20px;
 }
 
-.disability-box p {
+.disability-box p 
+{
   font-size: 18px;
   margin-bottom: 15px;
 }
 
-.return-btn {
-  background-color: #0d47a1;
+.return-btn 
+{
+  background-color: #5473a2f2;
   color: #fff;
   border: none;
   padding: 10px 25px;
@@ -95,13 +108,15 @@ main {
   right: 20px;
 }
 
-.return-btn:hover {
+.return-btn:hover 
+{
   background-color: #1565c0;
   transform: translateY(-2px); /* تحريك خفيف عند التمرير */
 }
 
 /* تأثير ظهور البوكس */
-@keyframes fadeIn {
+@keyframes fadeIn
+{
   0% {
     opacity: 0;
     transform: translateY(20px);
@@ -113,31 +128,39 @@ main {
 }
 
 /* استجابة للأجهزة المحمولة */
-@media (max-width: 768px) {
-  .buttons button {
+@media (max-width: 768px) 
+{
+  .buttons button 
+  {
     font-size: 16px;
     padding: 10px 22px;
   }
 
-  .disability-box {
+  .disability-box 
+  {
     padding: 20px;
   }
 }
 
-@media (max-width: 480px) {
-  header h1 {
+@media (max-width: 480px) 
+{
+  header h1 
+  {
     font-size: 20px;
   }
 
-  .buttons button {
+  .buttons button 
+  {
     font-size: 14px;
   }
 
-  .disability-box p {
+  .disability-box p 
+  {
     font-size: 16px;
   }
 }
-.video-container {
+.video-container
+{
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -145,14 +168,16 @@ main {
   margin-top: 20px;
 }
 
-.video-box {
+.video-box 
+{
   flex: 1;
   max-width: 45%;
   min-width: 300px;
   text-align: center;
 }
 
-video {
+video
+{
   width: 100%; /* جعل العرض يتناسب مع الحاوية */
   max-width: 600px; /* تحديد أقصى عرض */
   height: 400px; /* تعيين الطول يدويًا ليتطابق */
@@ -160,4 +185,3 @@ video {
   border-radius: 10px; /* زوايا مستديرة */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-

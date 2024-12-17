@@ -3,7 +3,8 @@ function showDisabilityInfo(disabilityType) {
   document.body.innerHTML = "";
 
   // محتوى الإعاقة البصرية
-  if (disabilityType === "visual") {
+  if (disabilityType === "visual") 
+  {
     const lessonText = `
       <div class="disability-box">
         <h2>درس: حياة التنقل والترحال قبل اكتشاف الزراعة</h2>
@@ -40,7 +41,8 @@ function showDisabilityInfo(disabilityType) {
   }
 
   // محتوى الإعاقة السمعية
-  else if (disabilityType === "hearing") {
+  else if (disabilityType === "hearing") 
+  {
     const lessonText = `
       <div class="disability-box">
         <h2>درس: حياة التنقل والترحال قبل اكتشاف الزراعة</h2>
@@ -72,6 +74,7 @@ function showDisabilityInfo(disabilityType) {
   }
 }
 
-function goBack() {
+function goBack() 
+{
   location.reload();
 }
